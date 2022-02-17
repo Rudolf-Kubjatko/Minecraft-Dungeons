@@ -28,13 +28,15 @@ body {
     position: relative;
 }
 .mainheadermc {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position:absolute;
     margin-top: 7px;
+    justify-content: space-between;
 }
-.login {
-    margin-left: 870px;
+.logginContainer {
+    margin-right: 20px;
 }
 .mainhelp {
     margin-left: 20px;
@@ -71,7 +73,7 @@ body {
 }
 .dungeonscss {
     height: 520px;   
-    margin: 0 111px;
+    margin: 0 20px;
     padding:64px 0;
 }
 .containers{  
@@ -129,6 +131,12 @@ h3 {
     padding: 24px ;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+@media (max-width: 550px){
+    .standard{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 .standardInner{
     grid-column: span 3 / span 3;
@@ -219,11 +227,11 @@ li::before {
 .passoneimg {
     max-width: 340px;
     max-height: 340px;
+    margin: 0 auto;
  }
 .passoneimg img {
     width: 100%;
     height: auto;
-    min-width: 300px;
 }
 .passonetext {
     color: white;
@@ -377,8 +385,13 @@ h5 {
     .passoneprice {
         height: 100px;
     }
-}
 
+}
+@media (max-width: 550px){
+    .mcimg {
+        height: unset;
+    }
+}
 
 
 
