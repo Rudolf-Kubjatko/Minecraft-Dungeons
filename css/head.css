@@ -121,7 +121,6 @@ h3 {
 .ultimate {
     width: 1100px;
     max-width: 100%;
-    height: 500px;
     margin-bottom: 80px;
     background-color: rgb(56, 56, 56);
     color: white;
@@ -135,9 +134,9 @@ h3 {
     grid-column: span 3 / span 3;
 }
 .mcimg  {
-   width: 340px;
-   max-width: 100%;
-   margin-top: 77px;
+    width: 340px;
+    max-width: 100%;
+    margin-top: 77px;
     margin-left: 20px;
     grid-column: span 2 / span 2;
 }
@@ -175,7 +174,7 @@ h4 {
     padding-left: 8px;
     margin: 20px 0px 0px 8px; 
     display: grid; 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 li::before {
     content: "• ";
@@ -192,9 +191,10 @@ li::before {
     font-size: 110%;
     text-align: center;
     height: 40px;
-    padding-top: 1px;
+    padding-top: 10px;
     cursor: pointer;
     word-break: break-all;
+
 }
 .addultimatetext p {
     word-break: break-all;
@@ -244,7 +244,7 @@ h5 {
 }
 .passoneprice {
     max-width: 100%;
-    height: 198px;
+    height: 100%;
     align-items: flex-end;
     justify-content: flex-end;
     display: flex;
@@ -280,6 +280,7 @@ h5 {
 .ultimatedlc {   
     color: white;
     padding: 0 30px;
+
 }
 .ultimatedlc p {
     font-size: 98%;
@@ -297,21 +298,86 @@ h5 {
     padding: 0;
     font-size: 105%;
 }
-
-
+.dlconecart {
+    width: 100%;
+    height: 120px;
+}
+.dlconeprice {
+    max-width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+}
+.dlconeadd {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-right: 30px;
+}
+.dlconecartadd {
+    background-color: rgb(65, 126, 5);
+    padding: 8px;
+}
+.dlconepriceone {
+    padding-top: 8px;
+}
+.dlconecartadd:hover {
+    background-color: rgb(56, 56, 56);;
+}
 @media (max-width: 770px) {
     #header {
         max-width: 100%;
         max-height: 100px;
      }
+    .mainheadermc {
+        max-width: 100%;
+    }
     .passone {
         flex-direction: column;
-        background-color: rgb(56, 56, 56);}
+        background-color: rgb(56, 56, 56);
+        height:570px; }
+
     .passonetext {
         margin: 15px;}
-    .passoneprice {
+    .BUNDLES {flex-direction: column;
+        background-color: rgb(56, 56, 56);
+        height: 850px;
+        }
+    .ultimatedlc{
+        margin-top: 15px;
     }
-
+    h3 {
+        margin-top: 15px;
+        text-align: center;
+    }
+    h4 {
+        margin-right: 10px;
+    }
+    .mcimg {
+        height: 140px;
+        margin-left: 0;
+    }
+    .addultimatetext {
+        margin-top: 10px;
+    }
+    .addultimatetext p {
+        background-color: rgb(60, 114, 5);
+    }
+    .addultimatetext p:hover {
+        background-color: rgb(56, 56, 56);
+        cursor: pointer;
+    }
+    .ul {
+        max-width: 100%;
+    }
+    h5 {
+        margin-bottom: 15px;
+        font-size: 135%;
+    }
+    .passoneprice {
+        height: 100px;
+    }
+}
 
 
 
